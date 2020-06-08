@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/cliente/cadastro','ClienteController@telaCadastro')-> name('tela_cadastro');
 Route::post('/cliente/cadastro_passo1', 'ClienteController@salvaPasso1')->name('passo1');
 Route::post('/cliente/cadastro_final', 'ClienteController@salvaFinal')->name('cadastro_final');
+
+Route::get('/produto/cadastro', 'ProdutosController@telaCadastro')->name('tela_cadastro_produto');
+Route::post('/produto/salvar', 'ProdutosController@insercao')->name('produto_salvar');
